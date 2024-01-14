@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            /* min-height: 980px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        }
+        .card{
+            width: 380px;
+            height: 600px;
+            background-color: antiquewhite;
+            gap: 30px;
+            /* padding: 20px; */
+            border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card img{
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .textbox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            width: 80%;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        #amountbox{
+            width: 82%;
+            height: 9%;
+            background-color: aquamarine;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #paybutton{
+            width: 80%;
+            height: 9%;
+            background-color: #0f1d65;
+            color: white;
+            border-radius: 10px;
+            font-size: 1rem;
+            box-shadow: 0px 20px 30px black;
+        }
+        .cancelbox a{
+            text-decoration: none;
+            color: rgb(50, 46, 46);
+            font-size: large;
+            font-weight: bold;
+        }
+        #leftbox{
+            /* width: fit-content; */
+            height: 100%;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .imgbox img{
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img
+                src="Dragon.png"
+            />
+
+            <div class="textbox">
+                <h2>Dragon Music</h2>
+                <p>
+                    Dragon Music is leading international music company with over 100,000 subscribers worldwide.
+                </p>
+            </div>
+
+            <div id="amountbox">
+                <div id="leftbox">
+                    <div class="imgbox">
+                        <img
+                            src="Logo.png"
+                        />
+                    </div>
+                    <div class="texamountbox">
+                        <p>Amount</p>
+                        <p>$99.9/year</p>
+                    </div>
+                </div>
+                <div id="rightbox">
+                    <a href="@">Change</a>
+                </div>
+            </div>
+
+            <button id="paybutton">
+                proceed to payment
+            </button>
+
+            <div class="cancelbox">
+                <a href="##">Cancel Order</a>
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+</html>
